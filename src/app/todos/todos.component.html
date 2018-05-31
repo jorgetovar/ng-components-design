@@ -1,0 +1,10 @@
+<div>
+  <app-todo-form
+    (add)="addTodo($event)">
+  </app-todo-form>
+  <app-todo-list
+    [todos]="todos"
+    (complete)="completeTodo($event)"
+    (delete)="removeTodo($event)">
+  </app-todo-list>
+</div>
